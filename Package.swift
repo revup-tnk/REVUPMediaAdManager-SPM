@@ -5,14 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "REVUPMediaAdManager",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "REVUPMediaAdManager",
             targets: ["REVUPMediaAdManagerTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "13.6.0"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "13.11.0"),
     ],
     targets: [
         .target(
@@ -25,8 +25,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "REVUPMediaAdManager",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/REVUPMediaAdManager.zip",
-            checksum: "49cfe963ded71407ad37d3e1a2848fde92a9be2fb275c699ee44a40d1713d211"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.2.0/REVUPMediaAdManager.zip",
+            checksum: "99b4617f45c2c945863a6868016cc2eaa640b547fdac96548a5268f936889dcf"
         ),
     ]
 )
